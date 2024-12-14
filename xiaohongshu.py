@@ -62,7 +62,6 @@ def login():
     # 访问登陆页面
     while True:
         phone = input("请输入手机号：")
-        # phone = "13220130148"
         if len(phone) == 11:
             break
         # print("手机号码不合法！")
@@ -153,7 +152,6 @@ def start():
         select_user()
         # 登录
         login()
-        # login_successful() #个人修改 - 跳过自动登录部分
         while True:
             # 选择功能
             select_create()
