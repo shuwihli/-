@@ -123,8 +123,7 @@ def select_create():
         if Config.Browser.current_url != "https://creator.xiaohongshu.com/publish/publish":
             Config.Browser.get("https://creator.xiaohongshu.com/publish/publish")
         print("1. 视频上传  2.图文上传  3. 切换用户 4.退出")
-        # select = input("请选择功能：")
-        select = "2"
+        select = input("请选择功能：")
         match select:
             case '1':
                 Create.create_video()
@@ -135,7 +134,6 @@ def select_create():
                 return
             case '3':
                 switch_users()
-                return
             case '4':
                 Quit()
                 return
